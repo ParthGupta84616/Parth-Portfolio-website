@@ -7,15 +7,16 @@ import Project4 from "../assets/project4.png";
 
 function Project() {
   return (
-    <div className="container m-auto px-4 sm:py-12">
+    <div className="container m-auto px-4 sm:py-5">
             <h2 className="text-2xl font-semibold  hover:scale-105 transition-all duration-1000">Projects</h2>
-            <div className="flex flex-col sm:flex-row gap-10 mt-11 font-medium">
+            <div className="flex flex-col sm:flex-row gap-8 mt-11 font-medium">
               <ProjectCard 
               imgURL={Project1}
               projectTitle={"Advance Todo App"}
               projectDescription={"Your Ultimate Task Manager! Effortlessly add, remove, and update tasks. Set deadlines and stay on track. Enjoy a personalized experience with Google sign-in. Stay organized and productive with TodoApp!"}
               projectGithub={"https://github.com/ParthGupta84616/TodoApp-ReactJs"}
               projectLive={'https://todo-app-pg.netlify.app'}
+              
               / >
               <ProjectCard 
               imgURL={Project2}
@@ -26,7 +27,7 @@ function Project() {
               / >
               
             </div>
-            <div className="flex flex-col sm:flex-row gap-10 mt-11">
+            <div className="flex flex-col sm:flex-row gap-8 mt-8">
             <ProjectCard 
               imgURL={Project3}
               projectTitle={"Spotify FrontPage Clone"}
