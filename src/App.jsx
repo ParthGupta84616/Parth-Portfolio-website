@@ -1,13 +1,11 @@
 import "./App.css";
-import Facebook from "./assets/facebook.svg";
-import LinkedIn from "./assets/linkedin.svg";
-import Instagram from "./assets/instagram.svg";
 import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
 import Project from "./Components/Project";
 import Intro from "./Components/Intro";
 import Technologies from "./Components/Technologies";
 import Skills from "./Components/Skills";
+import Footer from "./Components/Footer";
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -34,7 +32,7 @@ function App() {
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center ">
             <div>
             <a href="#main">
-              <h1 className="font-bold text-2xl hover:scale-105 transition-all duration-200 ">Parth Portfolio</h1>
+              <h1 className="font-bold text-2xl hover:scale-105 transition-all duration-200 ">Parth's Portfolio</h1>
             </a>
             </div>
             <div>
@@ -83,37 +81,15 @@ function App() {
         </section>
       </main>
       <footer>
-        <div className="container m-auto flex justify-between px-4 py-6">
-          <div>
-            <p className="text-gray-300 text-sm">Copyright @ 2023</p>
-          </div>
-          <div>
-            <ul className="flex gap-4">
-              <li>
-                <a>
-                  <img src={Facebook} className="w-5" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img src={LinkedIn} className="w-5" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img src={Instagram} className="w-5" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <Footer/>
+        
       </footer>
       {
         scrolling && (
           <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
             window.scrollTo(0,0);
           }}>
-            <img src={ArrowDown} />
+            <img src={ArrowDown} className="hover:scale-110 transition-all duration-300" />
           </button>
         )
       }
