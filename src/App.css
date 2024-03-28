@@ -5,6 +5,9 @@ html {
 body {
     background-color: #1a0909;
     color: #fff;
+    margin: 0%;
+    padding: 0%;
+    /* overflow: hidden; */
 }
 
 .gradiant-text {
@@ -37,7 +40,7 @@ body {
 /* Custom scrollbar styles */
 /* width */
 ::-webkit-scrollbar {
-width: 10px;
+width: 0px;
 }
 
 /* Track */

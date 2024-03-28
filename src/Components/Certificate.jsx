@@ -46,19 +46,19 @@ function Certificate() {
     >
   
   <div className="flex gap-8 mt-6 font-medium whitespace-nowrap">
-    <div className="flex-none w-1/3">
+    <div className="flex-none w-1/2">
       <CertificateCard imgURL={Python} title={"Python (Basic)"}/>
     </div>
-    <div className="flex-none w-1/3">
+    <div className="flex-none w-1/2">
       <CertificateCard imgURL={Python} title={"Python (Basic)"}/>
     </div>
-    <div className="flex-none w-1/3">
+    <div className="flex-none w-1/2">
       <CertificateCard imgURL={Python} title={"Python (Basic)"}/>
     </div>
-    <div className="flex-none w-1/3">
+    <div className="flex-none w-1/2">
       <CertificateCard imgURL={Python} title={"Python (Basic)"}/>
     </div>
-    <div className="flex-none w-1/3">
+    <div className="flex-none w-1/2">
       <CertificateCard imgURL={Python} title={"Python (Basic)"}/>
     </div>
   </div>

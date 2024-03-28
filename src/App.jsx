@@ -121,7 +121,6 @@ function App() {
       </main>
       <footer>
         <Footer/>
-        
       </footer>
       {
         scrolling && (
