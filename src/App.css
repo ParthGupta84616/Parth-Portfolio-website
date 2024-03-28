@@ -34,3 +34,32 @@ body {
     }
 }
 
+/* Custom scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #120b0b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #3e1f1f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #512626;
+}
+  
+.container {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* For iOS */
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  
