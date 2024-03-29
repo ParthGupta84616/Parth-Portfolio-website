@@ -7,6 +7,7 @@ import Technologies from "./Components/Technologies";
 import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 import Certificate from "./Components/Certificate";
+import CertificateName from "./Components/CertificateName"
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -29,7 +30,7 @@ function App() {
   return (
     <div className="max-w-4xl m-auto relative">
       <header className={`${scrolling ? 'border-b border-gray-900' : ''}  fixed left-0 right-0 top-0 z-20 `} id="home">
-        <div className="container m-auto px-4 py-6 max-w-4xl bg-gray-950 rounded-3xl">
+        <div className="container m-auto px-4 py-6 max-w-4xl bg-gray-950 ">
           <div className="flex flex-col gap-4 sm:flex-row justify-between items-center ">
             <div>
             <a href="#main">
@@ -80,6 +81,9 @@ function App() {
         <section id="certificate">
           <Certificate/>
         </section>
+        {/* <section >
+          <CertificateName / >
+        </section> */}
         <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
@@ -121,7 +125,6 @@ function App() {
       </main>
       <footer>
         <Footer/>
-        
       </footer>
       {
         scrolling && (
