@@ -18,8 +18,10 @@ function ProjectCard({ imgURL, projectTitle, projectDescription, projectGithub, 
       onMouseLeave={handleMouseLeave}
     >
       {hovered ? (
-        <div className='flex flex-col justify-center items-center ' style={{height: '27.35vh' }} >
-          <h1 className="font-semibold  text-base text-center   hover:scale-105 transition-all duration-700" >{projectDescription}</h1>
+        <div className='flex flex-col justify-center items-center ' style={{height: '' }} >
+          <div className="h-3/4">
+          <h1 className="font-semibold  text-base text-center   hover:scale-105 transition-all duration-700 " >{projectDescription}</h1>
+          </div>
           <div className=" flex justify-center text-xl mt-4">
             <a href={projectGithub} className="text-blue-600 hover:underline mr-2  hover:scale-105 transition-all duration-700" target="_blank" rel="noopener noreferrer">GitHub</a>
             {projectLive && (
@@ -28,7 +30,7 @@ function ProjectCard({ imgURL, projectTitle, projectDescription, projectGithub, 
           </div>
         </div>
       ) : (
-        <img src={imgURL} className="w-full h-full rounded-xl hover:rotate-360 transition duration-1000 " style={{height: '27.35vh' }} alt="Project" />
+        <img src={imgURL} className="w-full rounded-xl hover:rotate-360 transition duration-1000 h-64" style={{height: '' }} alt="Project" />
       )}
     </div>
   );
