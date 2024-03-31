@@ -72,10 +72,10 @@ function App() {
         <section id="projects">
           <Project/>
         </section>
-        <section className="py-10" id="technologies">
+        {/* <section className="py-10" id="technologies">
           <Technologies/>
-        </section>
-        <section>
+        </section> */}
+        <section id="technologies">
           <Skills />
         </section>
         <section id="certificate">
