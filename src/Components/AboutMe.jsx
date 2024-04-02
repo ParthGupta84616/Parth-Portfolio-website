@@ -7,7 +7,7 @@ function AboutMe() {
         <div className="container m-auto px-4 ">
             <h2 className="text-2xl font-semibold">About me</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
-                <AboutMeCard Year={"Start"} Discription={"I graduated from Excellent Circle Of Studies, affiliated with CBSE Board, Gwalior, MP, India, in 2021 with a 74% in PCM stream."} />
+                <AboutMeCard Year={"Start"} Discription={"I graduated from Excellent Circle Of Studies, affiliated with CBSE Board, Gwalior, MP, India, in 2021 with a 73.4% in PCM stream."} />
                 <AboutMeCard Year={2022} Discription={" I scored 84 percentile in JEE Mains, leading to admission at Acropolis Institute Of Technology And Research, Bhopal."} />
                 <AboutMeCard Year={2023} Discription={" Passionate about software development, I began my journey with C and JS. By mid-2023, I mastered HTML, CSS, and JavaScript."} />
                 <AboutMeCard Year={2023} Discription={"Fueled by curiosity, I delved into programming, mastering CPP and Python for competitive programming. Choosing Flask for web development, I crafted projects showcasing creativity and technical skill."} />
